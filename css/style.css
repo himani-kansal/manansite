@@ -9,6 +9,29 @@
 */
 
 /* Basic */
+.carousel-fade .carousel-inner > .item {
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner > .item,
+.carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0.4;
+}
+.carousel-fade .carousel-inner > .item.active,
+.carousel-fade .carousel-inner > .item.next.left {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner > .next,
+.carousel-fade .carousel-inner > .prev,
+.carousel-fade .carousel-inner > .active.left,
+.carousel-fade .carousel-inner > .active.right {
+    left: 0;
+}
+.carousel-fade .carousel-inner > .item.next,
+.carousel-fade .carousel-inner > .item.active.right,
+.carousel-fade .carousel-inner > .item.prev,
+.carousel-fade .carousel-inner > .item.active.left {
+    transform: translate3d(0, 0, 0);
+}
 
 	body {
 		background: #fff;
@@ -746,6 +769,7 @@
 		input[type="button"]:hover,
 		.button:hover {
 			background-color: #42b972;
+			text-decoration: none;
 		}
 
 		input[type="submit"]:active,
@@ -753,6 +777,7 @@
 		input[type="button"]:active,
 		.button:active {
 			background-color: #34935a;
+			text-decoration: none;
 		}
 
 		input[type="submit"].icon,
@@ -1001,12 +1026,12 @@
 	}
 
 		.wrapper.style1 {
-			background-color: #3ba666;
-			-moz-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
-			-webkit-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
-			-o-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
-			-ms-background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
-			background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
+			background-color: #606060;
+			-moz-background-image: linear-gradient(60deg, #505050 50%, #606060 50%);
+			-webkit-background-image: linear-gradient(60deg, #505050 50%, #606060 50%);
+			-o-background-image: linear-gradient(60deg, #505050 50%, #606060 50%);
+			-ms-background-image: linear-gradient(60deg, #505050 50%, #606060 50%);
+			background-image: linear-gradient(60deg, #505050 50%, #606060 50%);
 			color: #ffffff;
 		}
 
@@ -1091,4 +1116,3 @@
 					padding-left: 0;
 				}
 				/*These styles contain basic styles for fomatting along with our animation css*/
-
