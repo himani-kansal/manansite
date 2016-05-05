@@ -16,6 +16,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 		
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,7 +42,13 @@
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 		</noscript>
+		 <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+          
 		<!-- latest compiled and minified css -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">  
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
@@ -87,16 +94,24 @@
       color: #000 !important;
   }
   .dropdown-menu li a:hover {
-      background-color: red !important;
+      background-color: #282828 !important;
   }
   </style>
 	</head>
 	<body class="landing" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-		 
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
 
-		<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
+		<nav class="navbar navbar-default navbar-fixed-top" style="z-index:10000;" >
+  <div class="container-fluid" style="z-index:100;">
+    <div class="navbar-header" style="z-index:100;">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -109,16 +124,9 @@
         <li><a href="#myPage" style="font-size:11px;">HOME</a></li>
         <li><a href="#one" style="font-size:11px;">ABOUT US</a></li>
         <li><a href="#two" style="font-size:11px;">SECS</a></li>
-        <li><a href="#footer" style="font-size:11px;">CONTACT</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" style="font-size:11px;" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">ALUMNI</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li> 
-          </ul>
-        </li>
+      	<li><a href="#three" style="font-size:11px;">ALUMNIS</a></li>
+      	 <li><a href="#three" style="font-size:11px;">MEMBERS</a></li>
+      	<li><a href="#footer" style="font-size:11px;">CONTACT</a></li>  
       </ul>
     </div>
   </div>
@@ -138,10 +146,6 @@
 			<div class="carousel-inner" role="listbox">
 				<div class="item active" >
 					<img src="images/pic9.jpg" alt="groupphoto1"/>
-					<div class="carousel-caption">
-          			<h3>MANAN-A TECHNO SURGE</h3>
-          			<p>Computer and Coding Club Of YMCAUST.</p>
-        			</div>
 				</div>
 				<div class="item">
 					<img src="images/grp.jpg" alt="groupphoto2" />
@@ -170,9 +174,9 @@
 		<!-- One -->
 			<section id="one" class="wrapper style1 align-center" >
 				<div class="container">
-					<header style="height:340px;">
+					<header >
 						<h2>About Us</h2><br/>
-						<p style="font-size:20px; line-height:250%;">
+						<p style="font-size:20px; line-height:350%;">
 							
 							Manan, A Technosurge, is the computer technical club of YMCAUST.
 The club consists of the students who are passionate for coding,designing or developing.The community aims to learn together as a team and share the knowledge with all the other students to help all grow at a faster speed. Our motto is "LEARN COLLECTIVELY,GROW EXPONENTIALLY".
@@ -194,26 +198,49 @@ Manan organises events, contests, workshops and sessions in an elaborate and eff
 							<img class="image fit" src="images/pic01.jpg" alt="" />
 							<h3 class="title">SAMEER GUPTA</h3>
 							<p>(sameergupta1812@gmail.com)<br />
-								Knows C,C++</p><br />
-								<p><a href="#" class="button alt big">Facebook</a></p>
+								</p><br />
+								<p><a href="" target="_new" class="button alt big">Github</a></p>
 						</section>
 						<section class="feature col-md-4 12u$(small) slide-top ">
 							<img class="image fit" src="images/pic02.jpg" alt="" />
 							<h3 class="title">GARIMA DHINGRA</h3>
 							<p>(garima.dhingra6@gmail.com)<br />
-							Knows C,C++,Java,HTML,CSS</p><br />
-							<p><a href="#" class="button alt big">Facebook</a></p>
+							</p><br />
+							<p><a href="#" class="button alt big">Github</a></p>
 						</section>
 						<section class="feature col-md-4 12u$(small) slide-right ">
 							<img class="image fit" src="images/pic02.jpg" alt="" />
 							<h3 class="title">SATWICK DASH</h3>
 							<p>(satwick1995@gmail.com)<br />
-								Knows C,C++,Javascript</p><br />
-								<p><a href="#" class="button alt big">Facebook</a></p>
+								</p><br />
+								<p><a href="" target="_new" class="button alt big">Github</a></p>
 						</section>
 
 					</div>
 				</div>
+				</div>
+			</section>
+			<section id="three" class="wrapper style1 align-center"  >
+				<div class="container">
+						<div class="row">
+						<div class="6u 12u(medium) 12u$(small)">
+						<br /><br /><br /><br />
+						<img src="images/laptop-keyboard-hands-353x179.jpg" style="border-radius:50%;" width="220px" /><br /><br /><br /><br /><br /><br />
+						<a href="alumni.html" style="color:white; font-size:15px; border:1px solid black; background-color:#303030;
+						padding:13px;">
+						CONTACT ALUMNIS</a>	
+						<br /><br /><br /><br /><br /><br /><br />
+						</div>					
+						<div class="6u 12u(medium) 12u$(small)">
+						<br /><br /><br /><br />
+						<img src="images/laptop-keyboard-hands-353x179.jpg" style="border-radius:50%;" width="220px" /><br /><br /><br /><br /><br /><br />
+						<a href="members/index.html" style="color:white; font-size:15px; border:1px solid black; background-color:#303030;
+						padding:13px;">
+						CONTACT MEMBERS</a>	
+						<br /><br /><br /><br /><br /><br /><br />
+						</div>
+						</div>
+						
 				</div>
 			</section>
 
@@ -221,34 +248,34 @@ Manan organises events, contests, workshops and sessions in an elaborate and eff
 			<footer id="footer">
 				<div class="container">
 					<div class="row">
-						<section class="4u 6u(medium) 12u$(small)">
-							<h3>Lorem ipsum</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, cumque!</p>
-							<ul class="alt">
-								<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-								<li><a href="#">Quod adipisci perferendis et itaque.</a></li>
-								<li><a href="#">Itaque eveniet ullam, veritatis reiciendis?</a></li>
-								<li><a href="#">Accusantium repellat accusamus a, soluta.</a></li>
-							</ul>
-						</section>
-						<section class="4u 6u$(medium) 12u$(small)">
-							<h3>Nostrum, repellat!</h3>
-							<p>Tenetur voluptate exercitationem eius tempora! Obcaecati suscipit, soluta earum blanditiis.</p>
-							<ul class="alt">
-								<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-								<li><a href="#">Id inventore, qui necessitatibus sunt.</a></li>
-								<li><a href="#">Deleniti eum odit nostrum eveniet.</a></li>
-								<li><a href="#">Illum consectetur quibusdam eos corporis.</a></li>
-							</ul>
-						</section>
+    <form class="8u 12u(medium) 12u$(small)">
+      <div class="row">
+        <div class="input-field 4u 6u$(small)">
+        	<label for="first_name">Name</label>
+          <input id="first_name" type="text" class="validate">
+        </div>
+      </div><br />
+      <div class="row">
+        <div class="input-field 4u 6u$(small)">
+        <label for="email">Email</label>
+          <input id="email" type="email" class="validate">
+        </div>
+      </div><br />
+      <div class="row">
+        <div class="input-field 8u 10u$(small)">
+        <label for="textarea1">QUERY</label>
+          <textarea id="textarea1" rows="5"></textarea>
+        </div>
+      </div><br />
+      &nbsp;&nbsp;
+      <input type="submit" value="Submit"   style="background-color:#383838 ;" class="submitbutton 4u$(small)">
+      </form>
 						<section class="4u$ 12u$(medium) 12u$(small)">
 							<h3>Contact Us</h3>
 							<ul class="icons">
-								<li><a href="#" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon rounded fa-pinterest"><span class="label">Pinterest</span></a></li>
-								<li><a href="#" class="icon rounded fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="http://www.twitter.com/" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="http://www.facebook.com/" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://plus.google.com/" class="icon rounded fa-google-plus"><span class="label">Google+</span></a></li>
 							</ul>
 							<ul class="tabular">
 								<li>
@@ -257,19 +284,20 @@ Manan organises events, contests, workshops and sessions in an elaborate and eff
 									Sector-6, Faridabad
 								</li>
 								<li>
-									<h3>Mail</h3>
-									<a href="#">someone@untitled.tld</a>
+									<h3>Mail</h3><br />
+									<a href="#">manan@someone.com</a>
 								</li>
 								<li>
-									<h3>Phone</h3>
-									(000) 000-0000
+									<h3>Phone</h3><br />
+									+91 129 231 0126
 								</li>
 							</ul>
 						</section>
 					</div>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li>
-						<li>A website by: <a href="creative_himani.html">HIMANI KANSAL</a></li>
+
+						<li>&copy; MANAN. All rights reserved.</li>
+						<li>A website by: <a href="http://curience.in/creativehimani" style="color:white; font-style:italic; text-decoration:underline;">HIMANI KANSAL</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -299,7 +327,7 @@ $(document).ready(function(){
   });
 })
 </script>
-			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="js/typewriter.js"></script>
 
 	</body>
